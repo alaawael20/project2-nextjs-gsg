@@ -1,28 +1,6 @@
-'use client';
-
-import Link from 'next/link';
 import { styled } from 'styled-components';
-import Typography from '../atoms/Typography';
 
-const NotFound = () => {
-  return (
-    <Div>
-      <h1 className='error-code'>404</h1>
-      <p className='error-message'>Oops! Page not found</p>
-      <Typography tag={'h2'} fw='600'>
-        اصلاً عادي
-      </Typography>
-      <p>
-        Go back to{' '}
-        <Link href={'/'} className='back-link'>
-          home
-        </Link>
-      </p>
-    </Div>
-  );
-};
-
-const Div = styled.div`
+export const DivStyle = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
@@ -31,7 +9,7 @@ const Div = styled.div`
 
   .error-code {
     font-size: 120px;
-    color: #e74c3c;
+    color: #0D6EFD;
     margin: 0;
   }
 
@@ -59,5 +37,3 @@ const Div = styled.div`
     color: #fff;
   }
 `;
-
-export default NotFound;

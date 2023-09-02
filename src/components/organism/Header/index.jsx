@@ -5,7 +5,7 @@ import HeaderIcons from '@/components/molecules/HeaderIcons';
 import SearchBar from '@/components/molecules/SerachBar';
 import { Flex } from '@/styles/customStyle';
 import React from 'react';
-import { styled } from 'styled-components';
+import { HeaderSection } from './style';
 
 const Header = ({ showSearch = true }) => {
   return (
@@ -22,12 +22,3 @@ const Header = ({ showSearch = true }) => {
 };
 
 export default Header;
-
-const HeaderSection = styled.header`
-  padding: 1rem 0;
-  width: 100%;
-  background-color: ${({ theme }) => theme.pallet.base_white};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;

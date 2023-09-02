@@ -1,5 +1,7 @@
-import HomePage from '@/components/pages/HomePage';
+import HomePage from '@/components/pages/HomePage'
+import React from 'react'
 
-export default function Home() {
-  return <HomePage />;
-}
+const page = () => <HomePage />;
+
+export default page
+

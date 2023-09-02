@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from 'styled-components';
+import { Body1, Body2, H1, H2, H3, H4, H5, H6, Span } from './style';
 
 const Typography = ({ tag, fw, lh, children }) => {
   switch (tag) {
@@ -70,51 +70,5 @@ const Typography = ({ tag, fw, lh, children }) => {
       break;
   }
 };
-
-const H1 = styled.h1`
-  font-size: ${({ theme }) => theme.fontSizes.h1};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const H2 = styled.h2`
-  font-size: ${({ theme }) => theme.fontSizes.h2};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const H3 = styled.h3`
-  font-size: ${({ theme }) => theme.fontSizes.h3};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const H4 = styled.h4`
-  font-size: ${({ theme }) => theme.fontSizes.h4};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const H5 = styled.h5`
-  font-size: ${({ theme }) => theme.fontSizes.h5};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const H6 = styled.h6`
-  font-size: ${({ theme }) => theme.fontSizes.h6};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const Body2 = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.body2};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const Body1 = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.body1};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
-const Span = styled.span`
-  font-size: ${({ theme }) => theme.fontSizes.span};
-  font-weight: ${({ fw }) => fw || '700'};
-  line-height: ${({ lh }) => lh || 'normal'};
-`;
 
 export default Typography;

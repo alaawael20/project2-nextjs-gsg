@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from 'styled-components';
+import { Div, Icon, Span } from './style';
 
 const HeaderIconDiv = ({ icon, title }) => {
   return (
@@ -11,23 +11,3 @@ const HeaderIconDiv = ({ icon, title }) => {
 };
 
 export default HeaderIconDiv;
-
-const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-const Icon = styled.img`
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-`;
-const Span = styled.span`
-  font-weight: 400;
-  line-height: 15px;
-  padding-top: 5px;
-  text-align: center;
-  color: ${({ theme }) => theme.pallet.gray_4};
-  font-size: ${({ theme }) => theme.fontSizes.span};
-`;

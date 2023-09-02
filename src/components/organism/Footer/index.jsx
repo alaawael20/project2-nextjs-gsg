@@ -3,7 +3,20 @@ import Logo from '@/components/atoms/Logo';
 import Typography from '@/components/atoms/Typography';
 import { footer_socialMedia, images } from '@/mock/data';
 import React from 'react';
-import { styled } from 'styled-components';
+import {
+  ContentDetailImage,
+  ContentDetailItem,
+  ContentDetailItemContent,
+  ContentDetailSingleImage,
+  CopyRightsLanguage,
+  CopyRightsLanguageIcon,
+  FooterContainer,
+  FooterContentDetails,
+  FooterCopyRights,
+  FooterCopyRightsContainer,
+  FooterSection,
+  SocialMediaICon
+} from './style';
 
 const Footer = () => {
   return (
@@ -146,98 +159,5 @@ const Footer = () => {
     </FooterSection>
   );
 };
-
-const FooterSection = styled.footer`
-  max-width: 100%;
-  background-color: ${({ theme }) => theme.pallet.base_white};
-`;
-
-const FooterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2.5rem 0;
-
-  .info {
-    h6 {
-      letter-spacing: -0.2px;
-      padding: 1rem 0;
-      color: ${({ theme }) => theme.pallet.gray_6};
-      max-width: 250px;
-    }
-
-    .social_media {
-      display: flex;
-      gap: 12px;
-    }
-  }
-`;
-const SocialMediaICon = styled.img`
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.5);
-  }
-`;
-
-const FooterContentDetails = styled.div``;
-
-const ContentDetailItem = styled.div`
-  h6 {
-    color: ${({ theme }) => theme.pallet.base_dark};
-  }
-`;
-
-const ContentDetailItemContent = styled.div`
-  margin-top: 10px;
-
-  a {
-    text-decoration: none;
-  }
-  h6 {
-    letter-spacing: -0.2px;
-    color: ${({ theme }) => theme.pallet.gray_6};
-  }
-`;
-
-const ContentDetailImage = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 123px;
-  height: 42px;
-  border-radius: 6px;
-  background-color: ${({ theme }) => theme.pallet.base_dark};
-  margin-bottom: 8px;
-`;
-
-const ContentDetailSingleImage = styled.img``;
-
-const FooterCopyRights = styled.div`
-  max-width: 100%;
-  background-color: ${({ theme }) => theme.pallet.gray_2};
-`;
-
-const FooterCopyRightsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 0;
-
-  h6 {
-    letter-spacing: -0.2px;
-
-    color: ${({ theme }) => theme.pallet.gray_8};
-  }
-`;
-
-const CopyRightsLanguage = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 9px;
-`;
-const CopyRightsLanguageIcon = styled.img`
-  height: ${({ height }) => height};
-`;
 
 export default Footer;

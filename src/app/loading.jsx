@@ -1,5 +1,8 @@
-import Loading from '@/components/pages/Loading';
+import LoadingPage from '@/components/pages/LoadingPage/LoadingPage'
+import React from 'react'
 
-export default function Home() {
-  return <Loading />;
-}
+const loading = () => <LoadingPage />
+
+export default loading
+
+
